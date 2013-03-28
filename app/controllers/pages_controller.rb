@@ -10,4 +10,8 @@ class PagesController < ApplicationController
   def about
     @titre = "A propos de..."
   end
+  
+  def help
+    @titre = "Ruby On Rails ?"
+  end
 end
