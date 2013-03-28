@@ -1,4 +1,7 @@
 module ApplicationHelper
+	def logo
+		logo = image_tag("logo.png", :alt => "Projet Web Sheo", :class => "round")
+	end
 	# gère le contenu du title d'une page
 	def titre
 		base_titre = "Projet Web - Marie Sheo Coneau-Lacour"
