@@ -24,7 +24,7 @@ describe "LayoutLinks" do
   
   it "devrait trouver une page d'inscription à '/signup'" do
     get '/signup'
-    response.should have_selector('title', :content => "Inscription")
+    response.should have_selector('title', :content => "S'inscrire !")
   end
   
   it "devrait avoir le bon lien sur le layout" do
@@ -38,7 +38,7 @@ describe "LayoutLinks" do
     click_link "Accueil"
     response.should have_selector('title', :content => "Accueil")
     click_link "S'inscrire !"
-    response.should have_selector('title', :content => "Inscription")
+    response.should have_selector('title', :content => "S'inscrire !")
   end
 end
 
